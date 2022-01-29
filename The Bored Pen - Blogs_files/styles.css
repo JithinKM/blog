@@ -1,0 +1,385 @@
+body {
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	color: #777;
+}
+
+a {
+	text-decoration: none;
+	color: #0085A1;
+}
+
+.navbar-light {
+	background-color: #fff;
+}
+
+.nav-item .active {
+	color: #0085A1 !important;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.main {
+    margin-top: 89px;
+}
+
+footer {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.site-heading {
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.subheading {
+	overflow: hidden;
+	/* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange;
+	/* The typwriter cursor */
+	white-space: nowrap;
+	/* Keeps the content on a single line */
+	margin: 0 auto;
+	/* Gives that scrolling effect as the typing happens */
+	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+	to {
+		width: 100%
+	}
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent
+	}
+	50% {
+		border-color: orange;
+	}
+}
+
+header.masthead {
+	position: relative;
+	margin-bottom: 3rem;
+	padding-top: calc(8rem + 57px);
+	padding-bottom: 8rem;
+	background: no-repeat center center;
+	background-color: #6c757d;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+header.masthead:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #212529;
+	opacity: 0.5;
+}
+
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+	color: #fff;
+}
+
+header.masthead .page-heading,
+header.masthead .site-heading {
+	text-align: center;
+}
+
+header.masthead .page-heading h1,
+header.masthead .page-heading .h1,
+header.masthead .site-heading h1,
+header.masthead .site-heading .h1 {
+	font-size: 3rem;
+}
+
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+	line-height: 2;
+	display: block;
+	margin-top: 0.625rem;
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header.masthead .post-heading h1,
+header.masthead .post-heading .h1 {
+	font-size: 2.25rem;
+}
+
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+	line-height: 1.1;
+	display: block;
+}
+
+header.masthead .post-heading .subheading {
+	font-weight: 600;
+	margin: 0.75rem 0 2rem;
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header.masthead .post-heading .meta {
+	font-size: 1.25rem;
+	font-weight: 300;
+	font-style: italic;
+	font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header.masthead .post-heading .meta a {
+	color: #fff;
+}
+
+@media (min-width: 992px) {
+	header.masthead {
+		padding-top: 12.5rem;
+		padding-bottom: 12.5rem;
+	}
+	header.masthead .page-heading h1,
+	header.masthead .page-heading .h1,
+	header.masthead .site-heading h1,
+	header.masthead .site-heading .h1 {
+		font-size: 5rem;
+	}
+	header.masthead .post-heading h1,
+	header.masthead .post-heading .h1 {
+		font-size: 3.5rem;
+	}
+}
+
+.section-heading {
+	font-size: 2.25rem;
+	font-weight: 700;
+	margin-top: 3.75rem;
+}
+
+.caption {
+	font-size: 0.875rem;
+	font-style: italic;
+	display: block;
+	margin: 0;
+	padding: 0.625rem;
+	text-align: center;
+}
+
+.post-container {
+	margin-top: 15px;
+}
+
+.post-outer {
+	padding: 0;
+}
+
+.post-preview {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid #ccc;
+	padding: 5px 10px;
+	margin: 20px 0;
+	transition: box-shadow 0.3s;
+}
+
+.post-preview:hover {
+	box-shadow: 0px 5px 5px -5px rgba(117, 101, 101, 1);
+	-webkit-box-shadow: 0px 5px 5px -5px rgba(117, 101, 101, 1);
+	-moz-box-shadow: 0px 5px 5px -5px rgba(117, 101, 101, 1);
+}
+
+.post-preview a:focus,
+.post-preview a:hover {
+	text-decoration: none;
+	color: #0085A1;
+}
+
+.post-preview .post-title {
+	color: #000;
+	font-size: 1.5rem;
+	margin-top: 1.875rem;
+	margin-bottom: 0.625rem;
+}
+
+.post-preview .post-title:hover {
+	color: #0085A1;
+}
+
+.post-preview .post-subtitle {
+	font-size: 1.3rem;
+	font-weight: 100;
+	word-break: break-all;
+	margin-bottom: 0.625rem;
+}
+
+.post-preview .post-meta {
+	font-size: 1.125rem;
+	font-style: italic;
+	margin-top: 0;
+	color: #6c757d;
+}
+
+.post-preview .post-category {
+	padding: 0 10px;
+}
+
+.post-preview .post-meta a {
+	text-decoration: none;
+}
+
+.post-meta .post-category {
+	color: #9e9e9e;
+}
+
+.post-meta .travelogue {
+	color: #ae3a3b4d;
+}
+
+.post-meta .movie-review {
+	color: #1769aa4f;
+}
+
+.post-meta .book-review {
+	color: #81c784;
+}
+
+.post-meta .poem {
+	color: #ffb74d;
+}
+
+.post-meta .story {
+	color: #f06292;
+}
+
+.post-preview {
+	border-left: 10px solid #9e9e9e;
+}
+
+.post-preview.travelogue {
+	border-left: 10px solid #ae3a3b4d;
+}
+
+.post-preview.movie-review {
+	border-left: 10px solid #1769aa4f;
+}
+
+.post-preview.book-review {
+	border-left: 10px solid #81c784;
+}
+
+.post-preview.poem {
+	border-left: 10px solid #ffb74d;
+}
+
+.post-preview.story {
+	border-left: 10px solid #f06292;
+}
+
+.blog-meta {
+	background-color: #9e9e9e;
+	padding: 20px;
+	color: #fff;
+}
+
+.blog-meta p {
+	margin: 0;
+}
+
+.blog-meta.travelogue {
+	background-color: #ae3a3b4d;
+}
+
+.blog-meta.movie-review {
+	background-color: #1769aa4f;
+}
+
+.blog-meta.book-review {
+	background-color: #81c784;
+}
+
+.blog-meta.poem {
+	background-color: #ffb74d;
+}
+
+.blog-meta.story {
+	background-color: #f06292;
+}
+
+.blog-content {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 0;
+}
+
+.blog-detail {
+	background-color: #fff;
+	word-break: break-all;
+	padding: 20px;
+}
+
+.blog-detail img {
+    width: 100% !important;
+}
+
+.social-links a {
+	color: #555;
+	padding: 5px;
+}
+
+.about-content {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+}
+
+.social-links .twitter:hover {
+	color: #1DA1F2;
+}
+
+.social-links .facebook:hover {
+	color: #4267B2;
+}
+
+.social-links .instagram:hover {
+	color: #833AB4;
+}
+
+.social-links .linkedin:hover {
+	color: #0e76a8;
+}
+
+.admin-container {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 50px auto;
+	padding: 20px;
+}
+
+.tab-pane .table-responsive {
+	background-color: #fff;
+}
+
+.blogAction {
+	text-decoration: none;
+	cursor: pointer;
+}
